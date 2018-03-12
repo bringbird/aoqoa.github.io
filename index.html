@@ -3,16 +3,7 @@
         <script>
             var u = navigator.userAgent;
             var ua = navigator.userAgent.toLowerCase();
-            var isUC  = u.indexOf('UCBrowser') > -1;
-            var isQQbrowser = u.indexOf("MQQBrowser")>-1;
-            var isQQ = ua.match(/qbwebviewtype/i);
-            if (isUC) {
-                alert("UC 浏览器");
-            } else if (isQQbrowser && isQQ) {
-                alert("QQ浏览器");
-            } else if (!isQQbrowser && isQQ) {
-                alert("QQ内置浏览器");
-            }
+            alert(ua);
             </script>
     </body>
 </html>
