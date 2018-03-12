@@ -1,5 +1,16 @@
 <html>
     <body>
-        <script> alert(navigator.userAgent.toLowerCase()); </script>
+        <script>
+            var u = navigator.userAgent;
+            var ua = navigator.userAgent.toLowerCase();
+            var isUC  = u.indexOf('UCBrowser') > -1;
+            var isQQbrowser = u.indexOf("MQQBrowser")>-1;
+            var isQQ = ua.match(/qbwebviewtype/i);
+            if (isUC) {
+                alert("UC 浏览器");
+            } else if (isQQ||isQQ) {
+                alert("QQ浏览器/QQ内置浏览器");
+            }
+            </script>
     </body>
 </html>
